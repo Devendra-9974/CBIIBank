@@ -4,7 +4,7 @@
 
 const API_BASE_URL = window.location.origin.includes(':8080') 
     ? window.location.origin 
-    :"https://cbiibank.onrender.com/" ;
+    :"https://cbiibank.onrender.com" ;
 
 /**
  * Universal API Fetch Client
