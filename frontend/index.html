@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBII Bank - Enterprise Online NetBanking &amp; Financial Services</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo-icon">
+                    <i class="bi bi-bank2"></i>
+                </div>
+                <span class="fs-4 fw-bold tracking-tight text-white">CBII<span class="text-primary">Bank</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link text-white-50 hover-white" href="#features">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50 hover-white" href="#calculator">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50 hover-white" href="#security">Security</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info small" href="http://localhost:8080/swagger-ui.html" target="_blank">
+                            <i class="bi bi-code-slash"></i> REST OpenAPI
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-light btn-sm px-3 py-2 fw-semibold" href="login.html">
+                            <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm px-4 py-2 fw-semibold shadow-sm" href="register.html">
+                            <i class="bi bi-person-plus me-1"></i> Open Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-5 bg-dark text-white position-relative overflow-hidden" style="background: radial-gradient(circle at top right, #1e3a8a 0%, #0b132b 60%);">
+        <div class="container py-4 position-relative" style="z-index: 2;">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill fw-semibold mb-3">
+                        <i class="bi bi-shield-lock-fill me-1"></i> ACID Atomic Fund Transfers &amp; Spring Boot 3 Engine
+                    </span>
+                    <h1 class="display-4 fw-extrabold mb-3 lh-sm">Smart Digital Banking Built for Precision.</h1>
+                    <p class="lead text-light opacity-75 mb-4">
+                        Seamless accounts management, concurrency-protected fund transfers, automated retail loans, and real-time transaction ledger.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="register.html" class="btn btn-primary btn-lg px-4 py-3 fw-bold shadow">
+                            <i class="bi bi-wallet2 me-2"></i> Get Started Free
+                        </a>
+                        <a href="login.html" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
+                            <i class="bi bi-lock me-2"></i> Access NetBanking
+                        </a>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary d-flex align-items-center gap-4 text-white-50 small">
+                        <div><i class="bi bi-check-circle-fill text-success me-1"></i> 256-bit Encryption</div>
+                        <div><i class="bi bi-check-circle-fill text-success me-1"></i> Instant Settlement</div>
+                        <div><i class="bi bi-check-circle-fill text-success me-1"></i> 0% Account Fees</div>
+                    </div>
+                </div>
+
+                <!-- Interactive Hero Graphic: Virtual Card & Quick Inflow -->
+                <div class="col-lg-6">
+                    <div class="p-4 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.15);">
+                        <!-- Virtual Card Preview -->
+                        <div class="virtual-debit-card card-savings mb-4 shadow">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="small opacity-75 text-uppercase fw-semibold">CBII Platinum Rupee Debit</div>
+                                    <div class="fs-4 fw-bold">SAVINGS</div>
+                                </div>
+                                <i class="bi bi-bank2 fs-3 text-warning"></i>
+                            </div>
+                            <div class="card-emv-chip my-3"></div>
+                            <div class="card-number-display">4091 •••• •••• 0300</div>
+                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                <div>
+                                    <div class="small opacity-75" style="font-size: 0.7rem;">CARD HOLDER</div>
+                                    <div class="fw-bold">DEVENDRA K MISHRA</div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small opacity-75" style="font-size: 0.7rem;">EXPIRES</div>
+                                    <div class="fw-bold">12/29</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Live Balance Badge -->
+                        <div class="p-3 bg-white text-dark rounded-3 d-flex justify-content-between align-items-center shadow-sm">
+                            <div>
+                                <div class="small text-muted fw-semibold">Simulated Net Balance (INR)</div>
+                                <div class="fs-4 fw-bold text-primary">$37₹2,25,000.00</div>
+                            </div>
+                            <span class="badge bg-success-subtle text-success px-3 py-2 fw-semibold">
+                                <i class="bi bi-arrow-up-right me-1"></i> Live Active
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Key Metrics Grid -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom stat-card stat-card-blue p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small fw-bold text-uppercase">Pessimistic Locking</span>
+                            <h3 class="fw-bold text-primary mt-1 mb-0">100% ACID</h3>
+                            <small class="text-muted">Zero dirty reads / race conditions</small>
+                        </div>
+                        <div class="stat-icon-wrapper"><i class="bi bi-shield-check"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom stat-card stat-card-green p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small fw-bold text-uppercase">Settlement Time</span>
+                            <h3 class="fw-bold text-success mt-1 mb-0">&lt; 80ms</h3>
+                            <small class="text-muted">High throughput transfers</small>
+                        </div>
+                        <div class="stat-icon-wrapper"><i class="bi bi-lightning-charge"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom stat-card stat-card-amber p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small fw-bold text-uppercase">Retail Loans</span>
+                            <h3 class="fw-bold text-warning mt-1 mb-0">8.50%</h3>
+                            <small class="text-muted">Competitive starting APR</small>
+                        </div>
+                        <div class="stat-icon-wrapper"><i class="bi bi-percent"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom stat-card stat-card-rose p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small fw-bold text-uppercase">Security</span>
+                            <h3 class="fw-bold text-danger mt-1 mb-0">JWT + BCrypt</h3>
+                            <small class="text-muted">Stateless session tokens</small>
+                        </div>
+                        <div class="stat-icon-wrapper"><i class="bi bi-key"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Loan & Savings Calculator -->
+    <section id="calculator" class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-semibold">Interactive Tool</span>
+                <h2 class="fw-bold mt-2">Loan EMI &amp; Repayment Estimator</h2>
+                <p class="text-muted">Calculate monthly installments and total interest before applying</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-custom p-4 p-md-5 border-0 shadow-sm bg-light">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label fw-semibold mb-0">Loan Amount (₹)</label>
+                                <span class="fs-5 fw-bold text-primary" id="heroAmountLabel">$50,000</span>
+                            </div>
+                            <input type="range" class="form-range" id="heroAmountRange" min="10000" max="5000000" step="10000" value="500000">
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label fw-semibold mb-0">Loan Tenure (Months)</label>
+                                <span class="fs-5 fw-bold text-primary" id="heroTenureLabel">24 Months</span>
+                            </div>
+                            <input type="range" class="form-range" id="heroTenureRange" min="6" max="120" step="6" value="24">
+                        </div>
+
+                        <div class="row g-3 p-3 bg-white rounded-3 border text-center">
+                            <div class="col-md-4">
+                                <div class="small text-muted">Estimated Monthly EMI</div>
+                                <div class="fs-3 fw-bold text-success" id="heroEmiResult">$2,273.00</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="small text-muted">Applied Interest Rate</div>
+                                <div class="fs-3 fw-bold text-dark" id="heroRateResult">8.50%</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="small text-muted">Total Interest Payable</div>
+                                <div class="fs-3 fw-bold text-secondary" id="heroInterestResult">$4,552.00</div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="login.html" class="btn btn-primary px-4 py-2 fw-semibold">
+                                Apply for this Loan in Portal &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Solutions Grid -->
+    <section id="features" class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-semibold">Banking Services</span>
+            <h2 class="fw-bold mt-2">Comprehensive Online Banking Suite</h2>
+            <p class="text-muted">Engineered for security, transparency, and instant execution</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-arrow-left-right"></i></div>
+                    <h5 class="fw-bold mb-2">Atomic Money Transfer</h5>
+                    <p class="text-muted small">
+                        Pessimistic write locking on database records ensures concurrent transfers between accounts never deadlock or double-spend.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-wallet2"></i></div>
+                    <h5 class="fw-bold mb-2">Multi-Account Portfolio</h5>
+                    <p class="text-muted small">
+                        Manage Savings and Checking accounts with individual virtual debit cards, real-time balances, and detailed ledger audits.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-person-lines-fill"></i></div>
+                    <h5 class="fw-bold mb-2">Beneficiary Directory</h5>
+                    <p class="text-muted small">
+                        Save payees with IFSC validation for fast repeat payments and 1-click fund disbursement.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-receipt"></i></div>
+                    <h5 class="fw-bold mb-2">Printable Receipts &amp; CSV Exports</h5>
+                    <p class="text-muted small">
+                        Download transaction statements or generate printable official bank payment receipts for any transaction.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-cash-coin"></i></div>
+                    <h5 class="fw-bold mb-2">Online Loan Origination</h5>
+                    <p class="text-muted small">
+                        Apply for retail loans with dynamic EMI calculations and track approval workflows managed by branch credit officers.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom p-4 h-100">
+                    <div class="feature-icon mb-3"><i class="bi bi-shield-lock"></i></div>
+                    <h5 class="fw-bold mb-2">Admin Command Center</h5>
+                    <p class="text-muted small">
+                        Executive oversight console with liquidity metrics, account freeze/unfreeze controls, and loan underwriting tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Accounts Quick Access -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="card card-custom p-4 bg-secondary bg-opacity-25 border border-secondary text-white">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                    <h5 class="fw-bold mb-0"><i class="bi bi-lightning-charge text-warning me-2"></i> Quick Test Sandbox Credentials</h5>
+                    <span class="small text-white-50">Pre-seeded demo credentials ready for testing</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="p-3 bg-dark rounded-3 border border-secondary">
+                            <span class="badge bg-danger mb-2">System Admin</span>
+                            <div class="small"><strong>Email:</strong> devkmishra402@gmail.com</div>
+                            <div class="small"><strong>Password:</strong> DevAnil@789974</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-dark rounded-3 border border-secondary">
+                            <span class="badge bg-info text-dark mb-2">Bank Employee</span>
+                            <div class="small"><strong>Email:</strong> employee@cbiibank.com</div>
+                            <div class="small"><strong>Password:</strong> DevAnil@789974</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-dark rounded-3 border border-secondary">
+                            <span class="badge bg-success mb-2">Retail Customer</span>
+                            <div class="small"><strong>Email:</strong> aarav.patel@gmail.com</div>
+                            <div class="small"><strong>Password:</strong> Customer@123</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white-50 py-4 mt-auto border-top border-secondary">
+        <div class="container text-center">
+            <div class="fw-bold text-white mb-1">&copy; 2026 CBII Bank Online NetBanking System. Built with Spring Boot 3 &amp; MySQL.</div>
+            <div class="small">Enterprise Java Backend Developer Portfolio Project.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Hero Loan Calculator Logic
+        const amountRange = document.getElementById('heroAmountRange');
+        const tenureRange = document.getElementById('heroTenureRange');
+        const amountLabel = document.getElementById('heroAmountLabel');
+        const tenureLabel = document.getElementById('heroTenureLabel');
+        const emiResult = document.getElementById('heroEmiResult');
+        const rateResult = document.getElementById('heroRateResult');
+        const interestResult = document.getElementById('heroInterestResult');
+
+        function updateHeroCalc() {
+            const principal = parseFloat(amountRange.value);
+            const tenure = parseInt(tenureRange.value);
+
+            let rate = 8.50;
+            if (principal > 500000 && principal <= 2500000) rate = 9.25;
+            else if (principal > 2500000) rate = 10.50;
+
+            amountLabel.textContent = formatCurrency(principal);
+            tenureLabel.textContent = `${tenure} Months`;
+            rateResult.textContent = `${rate.toFixed(2)}%`;
+
+            const monthlyRate = (rate / 12) / 100;
+            const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, tenure)) / (Math.pow(1 + monthlyRate, tenure) - 1);
+            const totalPayable = emi * tenure;
+            const totalInterest = totalPayable - principal;
+
+            emiResult.textContent = formatCurrency(emi);
+            interestResult.textContent = formatCurrency(totalInterest);
+        }
+
+        amountRange.addEventListener('input', updateHeroCalc);
+        tenureRange.addEventListener('input', updateHeroCalc);
+        updateHeroCalc();
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+com\banking\service\AccountServiceTest.class
+com\banking\service\AuthServiceTest.class
+com\banking\controller\AuthControllerIntegrationTest.class
+com\banking\service\AdminServiceTest.class
+com\banking\service\TransactionServiceTest.class
+com\banking\service\BeneficiaryServiceTest.class
+com\banking\service\LoanServiceTest.class

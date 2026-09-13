@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Bank Account - CBII Bank Online NetBanking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo-icon"><i class="bi bi-bank2"></i></div>
+                <span class="fs-4 fw-bold text-white">CBII<span class="text-primary">Bank</span></span>
+            </a>
+            <a href="index.html" class="btn btn-outline-light btn-sm"><i class="bi bi-house me-1"></i> Return Home</a>
+        </div>
+    </nav>
+
+    <!-- Split Screen Registration Layout -->
+    <main class="container my-auto py-5">
+        <div class="row justify-content-center align-items-stretch g-0 shadow-lg rounded-4 overflow-hidden bg-white border">
+            <!-- Left Brand Highlights -->
+            <div class="col-lg-5 d-none d-lg-flex flex-column justify-content-between p-5 text-white" 
+                 style="background: linear-gradient(135deg, #0b132b 0%, #1c2541 60%, #3a506b 100%);">
+                <div>
+                    <span class="badge bg-success px-3 py-2 rounded-pill fw-semibold mb-3">
+                        <i class="bi bi-gift-fill me-1"></i> Instant $1,000 Welcome Deposit
+                    </span>
+                    <h3 class="fw-bold mb-3">Digital Account Opening in Minutes</h3>
+                    <p class="text-white-50">
+                        Join CBII Bank to unlock virtual debit cards, real-time money transfers, high-yield savings accounts, and personalized loan services.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-white bg-opacity-10 rounded-3 border border-light border-opacity-25">
+                    <div class="fw-bold mb-2"><i class="bi bi-check2-circle text-success me-1"></i> What You Get Immediately:</div>
+                    <ul class="list-unstyled small text-white-50 mb-0 d-flex flex-column gap-2">
+                        <li>• Dedicated 12-digit Savings Account Number</li>
+                        <li>• Initial $1,000.00 Opening Balance Credit</li>
+                        <li>• Full NetBanking &amp; Instant Transfer Access</li>
+                    </ul>
+                </div>
+
+                <div class="text-white-50 small">
+                    <i class="bi bi-shield-check me-1 text-success"></i> Strict KYC &amp; Data Privacy Compliant
+                </div>
+            </div>
+
+            <!-- Right Registration Form -->
+            <div class="col-lg-7 p-4 p-md-5">
+                <div class="mb-4">
+                    <h3 class="fw-bold text-dark mb-1">Open Your Account</h3>
+                    <p class="text-muted small">Please fill in your personal information to register</p>
+                </div>
+
+                <form id="registerForm" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold small">Full Legal Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-person text-muted"></i></span>
+                            <input type="text" class="form-control" id="name" required placeholder="e.g. Aarav Patel">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold small">Email Address</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-envelope text-muted"></i></span>
+                            <input type="email" class="form-control" id="email" required placeholder="aarav@example.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label fw-semibold small">Phone Number (10 digits)</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-telephone text-muted"></i></span>
+                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" placeholder="9876543210" maxlength="10">
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="password" class="form-label fw-semibold small">Create Password</label>
+                            <input type="password" class="form-control" id="password" required placeholder="Min 6 characters">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="confirmPassword" class="form-label fw-semibold small">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required placeholder="Re-enter password">
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="termsCheck" required checked>
+                        <label class="form-check-label small text-muted" for="termsCheck">
+                            I accept the <a href="#">Terms &amp; Conditions</a>. A default Savings account with $1,000 welcome credit will be credited.
+                        </label>
+                    </div>
+
+                    <button type="submit" id="registerBtn" class="btn btn-primary w-100 py-2 fw-bold">
+                        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none me-2"></span>
+                        Create Account &amp; Access NetBanking
+                    </button>
+                </form>
+
+                <div class="text-center mt-4 pt-3 border-top">
+                    <span class="text-muted small">Already have an account?</span>
+                    <a href="login.html" class="fw-bold text-decoration-none ms-1 small">Sign In here</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-3 border-top text-center text-muted small mt-auto">
+        &copy; 2026 CBII Bank. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        Auth.redirectIfAuthenticated();
+
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (!name || !email || !password) {
+                showAlert('Please fill in all mandatory fields.', 'error');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                showAlert('Passwords do not match.', 'error');
+                return;
+            }
+
+            if (password.length < 6) {
+                showAlert('Password must contain at least 6 characters.', 'error');
+                return;
+            }
+
+            if (phone && !/^\d{10}$/.test(phone)) {
+                showAlert('Phone number must be exactly 10 digits.', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('registerBtn');
+            const spinner = document.getElementById('btnSpinner');
+            btn.disabled = true;
+            spinner.classList.remove('d-none');
+
+            try {
+                const response = await apiRequest('/api/auth/register', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        password,
+                        phone: phone || null,
+                        role: 'CUSTOMER'
+                    })
+                });
+
+                if (response.success && response.data) {
+                    Auth.setUserSession(response.data);
+                    showAlert('Account created successfully! Welcome to CBII Bank Online NetBanking.', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.html';
+                    }, 900);
+                }
+            } catch (err) {
+                showAlert(err.message || 'Registration failed.', 'error');
+            } finally {
+                btn.disabled = false;
+                spinner.classList.add('d-none');
+            }
+        });
+    </script>
+</body>
+</html>
