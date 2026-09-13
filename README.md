@@ -346,3 +346,5 @@ All 29+ unit and integration tests run in isolated in-memory H2 test scope.
    - Prevents over-fetching and circular serialization issues.
    - Prevents Mass Assignment security vulnerabilities (attackers modifying roles or balances directly).
    - Allows strict Jakarta validation constraints on request models.
+#   C B I I B a n k  
+ 
